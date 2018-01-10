@@ -1,0 +1,27 @@
+{
+    "name": "origin",
+    "version": "1.0.0",
+    "description": "Kingsoft Security Origin PC Manager",
+    "main": "index.html",
+    "scripts": {
+        "start": "nw"
+    },
+    "keywords": [
+        "origin"
+    ],
+    "author": "zhangpeng",
+    "license": "MIT",
+    "window": {
+        "show":false,
+        "title": "origin",
+        "icon": "images/ico/logo.jpg",
+        "position": "center",
+        "width": 900,
+        "height": 560,
+        "toolbar": false,
+        "frame": false,
+        "resizable": false,
+        "min_width": 900,
+        "show_in_taskbar": true
+    }
+}

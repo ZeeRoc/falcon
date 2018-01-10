@@ -1,0 +1,10 @@
+.trash-container{
+    padding: 0 4px;
+}
+.trash-container .trash-title{
+	font-size: 13px;
+	color: #3445d9;
+}
+.scan-result .resList{
+	height: 296px;
+}

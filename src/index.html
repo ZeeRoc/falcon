@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html style="position:absolute;">
+
+<head>
+    <meta charset="UTF-8">
+    <title>金山企业管家</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/init.css">
+    <link rel="stylesheet" type="text/css" href="css/virus.css">
+    <link rel="stylesheet" type="text/css" href="css/trash.css">
+    <link rel="stylesheet" type="text/css" href="css/vulnerability.css">
+    <link rel="stylesheet" type="text/css" href="css/compoents.css">
+</head>
+
+<body>
+    <!-- <div id="body"> -->
+    <div class="container ">
+        <!-- <canvas id="canvas"></canvas> -->
+        <header class="dragable">
+            <span class="title"><i class="i">&#xe66d;</i>&nbsp;&nbsp;猎鹰企业卫士&nbsp;&nbsp;</span><a href="javascript:;" class="connect-status" ><i class="i" title="已连接至金山安全企业中心">&#xe642;</i></a>
+            <ul class="tools_menu">
+                <!-- <li><a class="settings" href="###"><i class="i">&#xe600;</i></a></li> -->
+                <li>
+                    <a class="menu" tabindex="0" href="###"><i class="i">&#xe6cc;</i></a>
+                    <ul class="menu-item">
+                        <li><a class="" id="settings" href="###"><i class="i">&#xe600;</i>系统设置</a></li>
+                        <li><a class="" id="update" href="###"><i class="i">&#xe60b;</i>检查更新</a></li>
+                        <li><a class="" href="###"><i class="i">&#xe63c;</i>反馈建议</a></li>
+                        <li><a class="" href="###"><i class="i">&#xe642;</i>新增功能</a></li>
+                        <li><a class="" href="###"><i class="i">&#xe623;</i>关于</a></li>
+                    </ul>
+                </li>
+                <li><a class="minify" href="###"><i class="i">&#xe6d4;</i></a></li>
+                <li><a class="close" href="###"><i class="i">&#xe6bf;</i></a></li>
+            </ul>
+            <div id="modal-bg" class="modal-bg"></div>
+        </header>
+        <div class="context">
+            <section class="index" id="index">
+                <div class="main-ctx">
+                    <div class="left">
+                        <i class="i">&#xe60a;</i>
+                    </div>
+                    <div class="right">
+                        <div class="top cf">
+                            <h1>下午好，来做个体检吧！</h1>
+                            <span class="tips">上次体检是 10 分钟前，共 23 个问题已修复</span>
+                            <a href="###" id="pe-scan" class="btn btn-success">立即体检</a>
+                        </div>
+                    </div>
+                    <div class="tools_lnk">
+                        <div class="index-news">
+                            <a href="###" class="news-img"></a>
+                            <div class="news-ctx">
+                                <a href="###" class="title">实时保护您的电脑 23 天！</a>
+                                <a href="###" class="des">共为您实时防护 379 次 ，处理威胁 92 次 </a>
+                            </div>
+                        </div>
+                        <ul id="lnk" class="lnk">
+                            <li>
+                                <a href="###"><img src="images/GameBoxPlugin_QO.png">
+                                    <span>桌面清理</span></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="images/QMGameSpeedup_QO.png">
+                                    <span>进程管理</span></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="images/QQPCClinic_QO.png">
+                                    <span>文件粉碎</span></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="images/GameLobbyPlugin_QO.png">
+                                    <span>浏览器保护</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="note">
+                        <ul>
+                            <li><a href="##">金山安全发布“永恒之石”防御全新解决方案</a></li>
+                            <li><a href="##">金山VGM防毒墙针对Wannacry勒索者病毒解决方案</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <!-- </div> -->
+            <section class="virus" id="virus">
+                <div class="main-ctx">
+                    <div class="left">
+                        <i class="i">&#xe60a;</i>
+                    </div>
+                    <div class="right">
+                        <div class="top cf">
+                            <h1>定期杀毒，保持电脑安全</h1>
+                            <span class="tips">上次扫描是 10 分钟前，未发现风险项</span>
+                            <div class="dropdown">
+                                <a href="###" id="scan-system" class="btn btn-success">立即体检</a>
+                                <div id="caret" class="caret"><a class="caret_key" href="###"><i class="i">&#xe6b4;</i></a></div>
+                                <ul>
+                                    <li><a id="fulldisk" href="###" class="">全盘杀毒</a></li>
+                                    <li><a id="scan-custom" href="###" class="">指定位置杀毒</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tools_lnk">
+                        <div class="index-news">
+                            <a href="###" class="news-img"></a>
+                            <div class="news-ctx">
+                                <a href="###" class="title">金山企业云安全中心已连接</a>
+                                <a href="###" class="des">病毒库版本：2017.06.07_beta_sp1</a>
+                            </div>
+                        </div>
+                        <ul id="lnk" class="lnk">
+                            <li>
+                                <a href="###"><img src="images/GameBoxPlugin_QO.png">
+                                    <span>隔离区</span></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="images/QMGameSpeedup_QO.png">
+                                    <span>信任区</span></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="images/QQPCClinic_QO.png">
+                                    <span>查杀日志</span></a>
+                            </li>
+                            <!-- <li>
+                                <a href="###"><img src="images/GameLobbyPlugin_QO.png">
+                                    <span>浏览器保护</span></a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <!-- <div class="note">
+                        <ul>
+                            <li><a href="##">金山安全发布“永恒之石”防御全新解决方案</a></li>
+                            <li><a href="##">金山VGM防毒墙针对Wannacry勒索者病毒解决方案</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div class="scan-ctx">
+                    <div class="top">
+                        <div class="scan-info">
+                            <div class="scan-icon">
+                                <i class="i">&#xe60a;</i>
+                            </div>
+                            <div class="scan-item">
+                                <h3 class="tips" id="tips">正在进行<span id="scan-type">**</span>扫描</h3>
+                                <span class="des" id="des">恶意刷流量的程序</span>
+                            </div>
+                            <div id="scan-time" class="scan-time">00:00:00</div>
+                            <div class="scan-operation">
+                                <a href="###" id="scan-pause" class="btn-opt">暂停</a>
+                                <a href="###" style="display: none" id="scan-repair" class="btn-opt">立即修复</a>
+                                <a href="###" id="scan-cancle" class="btn-opt">取消</a>
+                                <a href="###" style="display: none" id="scan-finish" class="btn-opt">完成</a>
+                                <a href="###" style="display: none" id="no-details" class="btn-opt">暂不处理</a>
+                            </div>
+                            <div id="progress" class="progress-bar">
+                                <div id="progress-now" class="progress-now"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <!-- <div class="scan-tips"> -->
+                        <div id="cancel-tips" class="cancel-tips">
+                            <div class="cancel-header">
+                                <ul>
+                                    <li>提示</li>
+                                    <li><a href="###" id="cancel-close"><i class="i">&#xe6bf;</i></a></li>
+                                </ul>
+                            </div>
+                            <div class="cancel-body"><i class="i">&#xe648;</i>扫描还未完成，是否取消本次扫描？</div>
+                            <div class="cancel-foot">
+                                <div class="opt-container">
+                                    <a href="###" id="cancel-ok" class="tips-btn">确定</a>
+                                    <a href="###" id="cancel-no" class="tips-btn">取消</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="scanResult" class="scan-result no-dragable" style="display: block;">
+                            <a href="##" class="virus-scan-res-title">
+                                <input type="checkbox" checked="" class="hide" id="checkAll" name="virusItem[]" value="">
+                                <label for="checkAll"></label><i class="i"></i> 发现风险<span class="res-des">发现 <span class="virus-num mark-num">0</span>个风险，请及时进行处理，防止感染。</span>
+                            </a>
+                            <ul class="resList">
+                                <h5 style="text-align: center; color: rgb(114, 114, 127); font-weight: 400; display: block;">正在查杀，暂未发现威胁···</h5>
+                                <!-- <li>
+                                    <input type="checkbox" checked="" class="hide" id="uuid_ab110628-0fa8-44dd-a262-eeac88c91c1f" name="virusItem" value="">
+                                    <label for="uuid_ab110628-0fa8-44dd-a262-eeac88c91c1f">Virus/Parite.a.infected</label><a href="##" class="detail-info">详情</a>
+                                    <div class="f-r"><a href="##" class="res-control no-op">清除感染</a><a href="##" class="res-control">信任</a></div>
+                                    <p class="virus-path" title="文件路径：C:/新建文件夹/4f2c91934aeb5f685bac88d459c3528a">路径：C:/新建文件夹/4f2c91934aeb5f685bac88d459c3528a</p>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+                <div class="tools-window"></div>
+                <!--Custom Path Start-->
+                <div id="custom-path" class="custom-path">
+                    <!--<header>-->
+                    <div class="custom-header cf">
+                        <span class="header-title">请选择查杀位置</span>
+                        <ul class="custom-menu">
+                            <li><a href="##" id="custom-close"><i class="i">&#xe6bf;</i></a></li>
+                        </ul>
+                    </div>
+                    <!--</header>-->
+                    <div class="path-container">
+                        <div class="custom-section hinge">
+                            <h4>关键位置</h4>
+                            <ul class="opt-container">
+                                <li>
+                                    <input checked type="checkbox" class="hide" id="a1" name="a1" value="">
+                                    <label for="a1">系统内存</label>
+                                </li>
+                                <li>
+                                    <input checked type="checkbox" class="hide" id="a2" name="a2" value="">
+                                    <label for="a2">系统启动项</label>
+                                </li>
+                                <li>
+                                    <input checked type="checkbox" class="hide" id="a3" name="a3" value="">
+                                    <label for="a3">被劫持系统文件</label>
+                                </li>
+                                <li>
+                                    <input checked type="checkbox" class="hide" id="a4" name="a4" value="">
+                                    <label for="a4">系统设置和IE设置</label>
+                                </li>
+                                <li>
+                                    <input checked type="checkbox" class="hide" id="a5" name="a5" value="">
+                                    <label for="a5">常用软件</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="custom-section common">
+                            <h4>常用位置</h4>
+                            <ul id="treeSelect" class="opt-container">
+                                <!--<li>
+                                <input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符1 >> C:</a>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符2 > C:</a>
+                                        <ul>
+                                            <li><input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符3 > C:</a></li>
+                                            <li><input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符3 > C:</a></li>
+                                            <li><input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符3 > C:</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符2 > C:</a></li>
+                                    <li><input type="checkbox" class="hide" id="b1" name="b1" value=""><label for="b1"></label><a href="###">盘符2 > C:</a></li>
+                                </ul>
+                            </li>
+                            <li><input type="checkbox" class="hide" id="b2" name="b2" value=""><label for="b2"></label><a href="###">盘符1 > C:</a></li>
+                            <li><input type="checkbox" class="hide" id="b3" name="b3" value=""><label for="b3"></label><a href="###">盘符1 > C:</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="###" id="Start" class="custom-btn btn-start">开始杀毒</a>
+                </div>
+                <div class="modal" id="scan-history">
+                    <div class="modal-header dragable">
+                        企业管家 - 查杀历史
+                        <a href="##" id="modal-close" class="modal-close qst-close"><i class="i">&#xe6bf;</i></a>
+                    </div>
+                    <div class="modal-body">
+                        <div class="scan-history tab">
+                            <ul class="tab-menu">
+                                <li><a ref="quarantine-area" class="active" href="##">隔离区</a></li>
+                                <li><a ref="trust-area" href="##">信任区</a></li>
+                                <li><a ref="scanlog-area" href="##">查杀日志</a></li>
+                            </ul>
+                            <div class="tab-area" style="display: block;" id="quarantine-area">
+                                <table>
+                                    <thead>
+                                        <th>
+                                            <input type="checkbox" class="hide" id="quarantine-all" name="quarantine" value="">
+                                            <label for="quarantine-all">风险项</label>
+                                        </th>
+                                        <th>处理时间</th>
+                                    </thead>
+                                    <tbody id="quarantine-data">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-area" id="trust-area">
+                                <table>
+                                    <thead>
+                                        <th>
+                                            <input type="checkbox" class="hide" id="trust-all" name="trust" value="">
+                                            <label for="trust-all">信任项</label>
+                                        </th>
+                                        <th>信任时间</th>
+                                    </thead>
+                                    <tbody id="trust-data">
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-area" id="scanlog-area">
+                                <table>
+                                    <thead>
+                                        <th>
+                                            <input type="checkbox" class="hide" id="scanlog-all" name="scanlog" value="">
+                                            <label for="scanlog-all">时间</label>
+                                        </th>
+                                        <th>扫描类型</th>
+                                        <th>扫描结果</th>
+                                    </thead>
+                                    <tbody id="scanlog-data">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="area-btn" style="display: block;" id="quarantine-area-btn">
+                            <ul>
+                                <li><a href="###" id="quar-del">彻底删除</a></li>
+                                <li><a href="###" id="quar-restore">恢复</a></li>
+                                <li><a href="###" class="qst-close">关闭</a></li>
+                            </ul>
+                        </div>
+                        <div class="area-btn" id="trust-area-btn">
+                            <ul>
+                                <li><a href="###" id="trust-cancel">取消信任</a></li>
+                                <li><a href="###" id="trust-add-folder">添加文件夹</a></li>
+                                <li><a href="###" id="trust-add-file">添加文件</a></li>
+                                <li><a href="###" class="qst-close">关闭</a></li>
+                            </ul>
+                        </div>
+                        <div class="area-btn" id="scanlog-area-btn">
+                            <ul>
+                                <li><a href="###" id="scanlog-export">导出日志</a></li>
+                                <li><a href="###" id="scanlog-del">删除日志</a></li>
+                                <li><a href="###" class="qst-close">关闭</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-bg">正在读取磁盘数据，请稍后...</div>
+            </section>
+            <section class="trash" id="trash">
+                <div class="main-ctx">
+                    <div class="left">
+                        <i class="i">&#xe60a;</i>
+                    </div>
+                    <div class="right">
+                        <div class="top cf">
+                            <h1>优化启动项，让电脑快如闪电</h1>
+                            <span class="tips">上次扫描是 10 分钟前，未发现风险项</span>
+                            <a href="###" class="btn btn-success">全面加速</a>
+                        </div>
+                    </div>
+                    <div class="tools_lnk">
+                        <div class="index-news">
+                            <a href="###" class="news-img"></a>
+                            <div class="news-ctx">
+                                <a href="###" class="title">金山企业云安全中心已连接</a>
+                                <a href="###" class="des">病毒库版本：2017.06.07_beta_sp1</a>
+                            </div>
+                        </div>
+                        <ul id="lnk" class="lnk">
+                            <li>
+                                <a href="###"><img src="images/GameBoxPlugin_QO.png">
+                                    <span>启动项</span></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="images/QMGameSpeedup_QO.png">
+                                    <span>优化记录</span></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="images/QQPCClinic_QO.png">
+                                    <span>已忽略</span></a>
+                            </li>
+                            <!-- <li>
+                                <a href="###"><img src="images/GameLobbyPlugin_QO.png">
+                                    <span>浏览器保护</span></a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <!-- <div class="note">
+                        <ul>
+                            <li><a href="##">金山安全发布“永恒之石”防御全新解决方案</a></li>
+                            <li><a href="##">金山VGM防毒墙针对Wannacry勒索者病毒解决方案</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div class="scan-ctx">
+                    <div class="top">
+                        <div class="scan-info">
+                            <div class="scan-icon">
+                                <i class="i">&#xe60a;</i>
+                            </div>
+                            <div class="scan-item">
+                                <h3 class="tips" id="tips">正在进行<span id="scan-type">**</span>扫描</h3>
+                                <span class="des" id="des">恶意刷流量的程序</span>
+                            </div>
+                            <div id="scan-time" class="scan-time">00:00:00</div>
+                            <div class="scan-operation">
+                                <a href="###" id="scan-pause" class="btn-opt">暂停</a>
+                                <a href="###" style="display: none" id="scan-repair" class="btn-opt">立即修复</a>
+                                <a href="###" id="scan-cancle" class="btn-opt">取消</a>
+                                <a href="###" style="display: none" id="scan-finish" class="btn-opt">完成</a>
+                                <a href="###" style="display: none" id="no-details" class="btn-opt">暂不处理</a>
+                            </div>
+                            <div id="progress" class="progress-bar">
+                                <div id="progress-now" class="progress-now"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <!-- <div class="scan-tips"> -->
+                        <div id="cancel-tips" class="cancel-tips">
+                            <div class="cancel-header">
+                                <ul>
+                                    <li>提示</li>
+                                    <li><a href="###" id="cancel-close"><i class="i">&#xe6bf;</i></a></li>
+                                </ul>
+                            </div>
+                            <div class="cancel-body"><i class="i">&#xe648;</i>扫描还未完成，是否取消本次扫描？</div>
+                            <div class="cancel-foot">
+                                <div class="opt-container">
+                                    <a href="###" id="cancel-ok" class="tips-btn">确定</a>
+                                    <a href="###" id="cancel-no" class="tips-btn">取消</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="scanResult" class="scan-result no-dragable">
+                            <!-- <a href="##" class="virus-scan-res-title">
+                                <input type="checkbox" checked="" class="hide" id="checkAll" name="virusItem[]" value="">
+                                <label for="checkAll"></label><i class="i"></i> 发现风险<span class="res-des">发现 <span class="virus-num mark-num">0</span>个风险，请及时进行处理，防止感染。</span>
+                            </a> -->
+                            <ul class="resList">
+                                <!-- <h5 style="text-align: center; color: rgb(114, 114, 127); font-weight: 400; display: block;">正在查杀，暂未发现威胁···</h5> -->
+                                <div class="trash-container">
+                                    <!-- <span class="trash-title"><i class="i">&#xe641;</i> Windows 垃圾</span> -->
+                                    <!-- <ul>
+                                        <li><img src="images/QQPCSoftMgr_QO.png" alt=""></li>
+                                    </ul> -->
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </section>
+            <section class="vulnerability" id="vulnerability">
+                <div class="main-ctx">
+                    <div class="left">
+                        <i class="i">&#xe60a;</i>
+                    </div>
+                    <div class="right">
+                        <div class="top cf">
+                            <h1>优化启动项，让电脑快如闪电</h1>
+                            <span class="tips">上次扫描是 10 分钟前，未发现风险项</span>
+                            <a href="###" class="btn btn-success" id="scan-vulnerability">扫描漏洞</a>
+                        </div>
+                    </div>
+                    <div class="tools_lnk">
+                        <div class="index-news">
+                            <a href="###" class="news-img"></a>
+                            <div class="news-ctx">
+                                <a href="###" class="title">金山企业云安全中心已连接</a>
+                                <a href="###" class="des">病毒库版本：2017.06.07_beta_sp1</a>
+                            </div>
+                        </div>
+                        <ul id="lnk" class="lnk">
+                            <li>
+                                <a href="###"><img src="images/GameBoxPlugin_QO.png">
+                                    <span>启动项</span></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="images/QMGameSpeedup_QO.png">
+                                    <span>优化记录</span></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="images/QQPCClinic_QO.png">
+                                    <span>已忽略</span></a>
+                            </li>
+                            <!-- <li>
+                                <a href="###"><img src="images/GameLobbyPlugin_QO.png">
+                                    <span>浏览器保护</span></a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <!-- <div class="note">
+                        <ul>
+                            <li><a href="##">金山安全发布“永恒之石”防御全新解决方案</a></li>
+                            <li><a href="##">金山VGM防毒墙针对Wannacry勒索者病毒解决方案</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+                <div class="scan-ctx">
+                    <div class="top">
+                        <div class="scan-info">
+                            <div class="scan-icon">
+                                <i class="i">&#xe60a;</i>
+                            </div>
+                            <div class="scan-item">
+                                <h3 class="tips" id="tips">正在进行<span id="scan-type">**</span>扫描</h3>
+                                <span class="des" id="des">请稍后...</span>
+                            </div>
+                            <div id="scan-time" class="scan-time">00:00:00</div>
+                            <div class="scan-operation">
+                                <a href="###" class="scan-pause btn-opt" style="display: none">暂停</a>
+                                <a href="###" class="scan-repair btn-opt" style="display: none" >一键修复</a>
+                                <a href="###" class="scan-cancle btn-opt" style="display: none">取消</a>
+                                <a href="###" class="scan-finish btn-opt" style="display: none" >完成</a>
+                                <a href="###" class="scan-ignore btn-opt" style="display: none" >忽略选中项</a>
+                                <a href="###" class="no-details btn-opt" style="display: none" >取消</a>
+                            </div>
+                            <div id="progress" class="progress-bar">
+                                <div id="progress-now" class="progress-now"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <!-- <div class="scan-tips"> -->
+                        <div id="cancel-tips" class="cancel-tips">
+                            <div class="cancel-header">
+                                <ul>
+                                    <li>提示</li>
+                                    <li><a href="###" id="cancel-close"><i class="i">&#xe6bf;</i></a></li>
+                                </ul>
+                            </div>
+                            <div class="cancel-body"><i class="i">&#xe648;</i>扫描还未完成，是否取消本次扫描？</div>
+                            <div class="cancel-foot">
+                                <div class="opt-container">
+                                    <a href="###" id="cancel-ok" class="tips-btn">确定</a>
+                                    <a href="###" id="cancel-no" class="tips-btn">取消</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="scanResult" class="scan-result no-dragable" style="display: block;">
+                            <a href="##" class="virus-scan-res-title">
+                                <input type="checkbox" checked="" class="hide" id="vulnerability-checkall" name="vulnerabilityItem[]" value="">
+                                <label for="vulnerability-checkall"></label><i class="i"></i> 发现漏洞<span class="res-des">发现 <span class="virus-num mark-num">0</span>个漏洞，请及时进行修复，防止被攻击。</span>
+                                
+                            </a>
+                            <ul class="filter">
+                                    <li><a href="javascript:;" class="active" filter-tag="all">全部</a></li>
+                                    <li><a href="javascript:;" filter-tag="danger">高危漏洞</a></li>
+                                    <li><a href="javascript:;" filter-tag="general">一般漏洞</a></li>
+                                    <li><a href="javascript:;" filter-tag="option">可选漏洞</a></li>
+                                </ul>
+                            <ul class="resList">
+                                <h5 style="text-align: center; color: rgb(114, 114, 127); font-weight: 400; display: block;">正在扫描，暂未发现漏洞···</h5>
+                                <!-- <li>
+                                    <input type="checkbox" checked="" class="hide" id="uuid_ab110628-0fa8-44dd-a262-eeac88c91c1f" name="virusItem" value="">
+                                    <label for="uuid_ab110628-0fa8-44dd-a262-eeac88c91c1f">Virus/Parite.a.infected</label><a href="##" class="detail-info">详情</a>
+                                    <div class="f-r"><a href="##" class="res-control no-op">清除感染</a><a href="##" class="res-control">信任</a></div>
+                                    <p class="virus-path" title="文件路径：C:/新建文件夹/4f2c91934aeb5f685bac88d459c3528a">路径：C:/新建文件夹/4f2c91934aeb5f685bac88d459c3528a</p>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </section>
+            <section class="soft" id="soft">
+                <div class="main-ctx">
+                    <div class="left">
+                        <i class="i">&#xe60a;</i>
+                    </div>
+                    <div class="right">
+                        <div class="top cf">
+                            <h1>一键管理电脑软件</h1>
+                            <span class="tips">上次检测软件健康在 1 个月前</span>
+                            <a href="###" class="btn btn-success">立即管理</a>
+                        </div>
+                    </div>
+                    <div class="tools_lnk">
+                        <div class="index-news">
+                            <a href="###" class="news-img"></a>
+                            <div class="news-ctx">
+                                <a href="###" class="title">建议您进行一次软件健康分析</a>
+                                <a href="###" class="des">共为您鉴定检测软件 42 个 ，处理 18 个不健康软件</a>
+                            </div>
+                        </div>
+                        <ul id="lnk" class="lnk">
+                            <li>
+                                <a href="###"><img src="images/GameBoxPlugin_QO.png">
+                                    <span>桌面清理</span></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="images/QMGameSpeedup_QO.png">
+                                    <span>进程管理</span></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="images/QQPCClinic_QO.png">
+                                    <span>文件粉碎</span></a>
+                            </li>
+                            <li>
+                                <a href="###"><img src="images/GameLobbyPlugin_QO.png">
+                                    <span>浏览器保护</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- <div class="note">
+                        <ul>
+                            <li><a href="##">金山安全发布“永恒之石”防御全新解决方案</a></li>
+                            <li><a href="##">金山VGM防毒墙针对Wannacry勒索者病毒解决方案</a></li>
+                        </ul>
+                    </div> -->
+                </div>
+            </section>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="###" toggle-tag="index" class="active"><i class="i">&#xe60a;</i>&nbsp;首页体检</a></li>
+            <li><a href="###" toggle-tag="virus"><i class="i">&#xe612;</i>&nbsp;病毒查杀</a></li>
+            <li><a href="###" toggle-tag="trash"><i class="i">&#xe604;</i>&nbsp;垃圾清理</a></li>
+            <!-- <li><a href="###" toggle-tag="accelerate"><i class="i">&#xe642;</i>&nbsp;开机优化</a></li> -->
+            <li><a href="###" toggle-tag="vulnerability"><i class="i">&#xe615;</i>&nbsp;漏洞修复</a></li>
+            <li><a href="###" toggle-tag="soft"><i class="i">&#xe602;</i>&nbsp;软件管理</a></li>
+        </ul>
+        <div id="modal-bg" class="modal-bg"></div>
+    </nav>
+    <div class="settings-container">
+        <div class="settings-header">系统设置</div>
+        <div class="settings-body">
+            <div class="settings-left">
+                <ul>
+                    <li><a href="javascript:;">通用设置</a></li>
+                    <li><a href="javascript:;">系统设置</a></li>
+                    <li><a href="javascript:;">查杀设置</a></li>
+                </ul>
+            </div>
+            <div class="settings-right"></div>
+        </div>
+        <div class="settings-footer"></div>
+    </div>
+    <div class="check-update">
+        <div class="check-update-header dragable">猎鹰企业卫士 - 检查更新<a href="###" class="update-close"><i class="i">&#xe6bf;</i></a></div>
+        <div class="check-update-body dragable">
+            <div class="update-icon"><i class="i">&#xe6f7;</i></div>
+            <!-- <div class="update-tips">发现新版本，立即升级，享受更专业的安全防护</div> -->
+            <div class="update-tips">正在检查更新，请稍后...</div>
+            <div class="update-download-rate">100%</div>
+            <div class="update-progress">
+                <div class="update-progress-bar"></div>
+            </div>
+        </div>
+        <div class="check-update-footer">
+            <a href="###" class="btn" style="display: none" id="update-now">立即升级</a>
+            <a href="###" class="btn" style="di
+            splay: none" id="update-ok">好的</a>
+            <a href="###" class="btn" style="display: none" id="update-restart">立即重启</a><!-- 
+            <a href="###" class="btn hide" style="display: none" id="update-restart-no">暂不重启</a> -->
+            <!-- <a href="###" class="btn hide" id="update-no">我知道了</a> -->
+        </div>
+    </div>
+    <div id="modal-cover" class="modal-cover"></div>
+
+    <!-- </div> -->
+</body>
+<script type="text/javascript" src="js/vendor/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/common/generate-res.js"></script>
+
+</html>

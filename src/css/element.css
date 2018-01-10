@@ -1,0 +1,122 @@
+.f-l {
+    float: left;
+}
+
+.f-r {
+    float: right;
+}
+.hide{
+    display:none
+}
+.btn {
+    width: 160px;
+    color: #fff;
+    padding: 8px 4px;
+    /* border: 1px solid red; */
+    display: block;
+    cursor: default;
+    text-align: center;
+}
+
+.btn.btn-success {
+    background-color: rgba(0, 195, 125, 1);
+    transition: all .25s;
+}
+
+.btn:hover,
+.dropdown .caret:hover {
+    background-color: #22e783;
+}
+
+.dropdown {
+    position: relative;
+    margin: 36px 0;
+    font-family: "hyjh";
+    font-weight: 100;
+}
+
+.dropdown .btn {
+    display: inline-block;
+    margin:0;
+}
+
+.dropdown ul {
+    /*opacity: 0;*/
+    transition: all .25s;
+    background-color: #00c27b;
+    position: absolute;
+    top: 100%;
+    /*border: 1px solid gray;*/
+    border-bottom: none;
+}
+
+.dropdown ul li a {
+    width: 134px;
+    display: block;
+    color: #fff;
+    line-height: 30px;
+    padding: 6px 29.5px;
+    font-size: 18px;
+    border-top: 1px solid #dadada;
+}
+
+.dropdown .caret {
+    margin-left: -4px;
+    border-left: 1px solid #dadada;
+    padding: 16px 0px;
+    display: inline-block;
+    text-align: center;
+    height: 100%;
+    width: 24px;
+    cursor: default;
+    vertical-align: top;
+    background-color: #00c37d;
+}
+.dropdown .caret a{
+    color:#fff;
+    cursor: default;
+    padding: 16px 3px;
+}
+/*.dropdown .caret:hover{
+    color: #000;
+}*/
+/*
+    tips btn
+*/
+.cancel-tips .tips-btn{
+    padding: 2px 24px;
+    color: #000;
+    display: inline-block;
+    font-size: 12px;
+    border: 1px solid #bbb;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    cursor: default;
+    transition: border-color .25s ease-in-out;
+}
+.cancel-tips .tips-btn:hover{
+    border-color: #44b74f;
+}
+.white {
+    background-color: #fff;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.hide {
+    display: none;
+}
